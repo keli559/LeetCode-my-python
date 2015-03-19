@@ -26,3 +26,7 @@ ipChuncks: so far, what have been the chuncks (in list, ex [255, 255, 11])
 2. Use stack.pop(0) to take out the first element, and expand from there for the rest of the string. 'ipstack' starts from [(0,0,[])], will expand to [(3, 2, ['0', '10']), (4, 2, ['0', '100'])], as the first record of the list keeps taken out, and the end of the list keeps appending new expanded chuncks resulting from the first takenout record in ipstack. How brilliant!
 
 3. '.'.join(['255', '255', '11', '135']): what a brilliant way to add dots between chuncks to form IP!
+
+4. [1, 2, 3].pop(0) => [2, 3]. It deletes the first element from the list; 
+
+[1, 2, 3].pop(1) => [1, 2]. It deletes the last element from the list;

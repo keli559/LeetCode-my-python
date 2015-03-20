@@ -66,13 +66,13 @@ class solution:
             return None
         for item in nlist:
             [num, hist] = self.maxline(item, hist)
-            print item, num
+#            print item, num
             numList.append(num)
         maxVal = max(numList)
         return numList.index(maxVal)
             
 a=solution()
 hist = {}
-nlist = range(1,10)
+nlist = range(1,10000)
 b = a.longest(nlist)
 print nlist[b]
